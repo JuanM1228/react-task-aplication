@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-export const TaskForm = () => {
+export const TaskForm = (createTask) => {
   const [title, setTitle] = useState("");
 
   const handleOnChange = (e) => {
@@ -10,7 +10,10 @@ export const TaskForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(title);
+    const newTask = {
+      title: title,
+    };
+    createTask(newTask);
   };
   return (
     <form onSubmit={handleSubmit}>

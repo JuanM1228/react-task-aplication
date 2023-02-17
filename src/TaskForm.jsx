@@ -10,10 +10,7 @@ export const TaskForm = (createTask) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newTask = {
-      title: title,
-    };
-    createTask(newTask);
+    createTask(title);
   };
   return (
     <form onSubmit={handleSubmit}>

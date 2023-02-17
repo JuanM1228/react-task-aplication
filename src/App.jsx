@@ -10,8 +10,15 @@ export const App = () => {
     setTasks(data);
   }, []);
 
-  const createTask = (task) => {
-    [...tasks, task];
+  const createTask = (titleTask) => {
+    setTasks([
+      ...tasks,
+      {
+        title: titleTask,
+        id: 4,
+        description: "nueva tarea",
+      },
+    ]);
   };
 
   return (

@@ -1,8 +1,9 @@
 import React from "react";
-import { TaskForm } from "./TaskForm";
+import { TaskForm } from "./Components/TaskForm";
 import { data } from "./task";
-import TaskList from "./TaskList";
+import TaskList from "./Components/TaskList";
 import { useState, useEffect } from "react";
+
 export const App = () => {
   const [tasks, setTasks] = useState([]);
 
@@ -10,15 +11,8 @@ export const App = () => {
     setTasks(data);
   }, []);
 
-  const createTask = (titleTask) => {
-    setTasks([
-      ...tasks,
-      {
-        title: titleTask,
-        id: 4,
-        description: "nueva tarea",
-      },
-    ]);
+  const createTask = (task) => {
+    setTasks([...tasks, task]);
   };
 
   return (

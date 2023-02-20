@@ -1,0 +1,19 @@
+@import "./taskCard.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color:#0D1317;
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

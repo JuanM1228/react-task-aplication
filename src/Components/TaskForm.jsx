@@ -23,7 +23,7 @@ export const TaskForm = ({ createTask }) => {
     setDescription("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="Form">
       <input
         placeholder="Escribe tu tarea"
         onChange={handleOnChangeInput}

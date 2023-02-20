@@ -19,13 +19,21 @@ export const TaskForm = ({ createTask }) => {
       title,
       description,
     });
+    setTitle("");
+    setDescription("");
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input placeholder="Escribe tu tarea" onChange={handleOnChangeInput} />
+      <input
+        placeholder="Escribe tu tarea"
+        onChange={handleOnChangeInput}
+        value={title}
+        autoFocus
+      />
       <textarea
         placeholder="Escribe tu descripción"
         onChange={handleOnChangeTextArea}
+        value={description}
       ></textarea>
       <button>Guardar</button>
     </form>

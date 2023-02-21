@@ -1,4 +1,5 @@
 @import "./taskCard.css";
+@import "./taskForm.css";
 
 * {
   margin: 0;

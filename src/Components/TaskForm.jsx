@@ -38,7 +38,7 @@ export const TaskForm = ({ createTask }) => {
         ></textarea>
       </div>
 
-      <button>Add Task</button>
+      <button className="addTask">Add Task</button>
     </form>
   );
 };

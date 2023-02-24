@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 export const TaskForm = ({ createTask }) => {
   const [title, setTitle] = useState("");
@@ -38,7 +39,10 @@ export const TaskForm = ({ createTask }) => {
         ></textarea>
       </div>
 
-      <button className="addTask">Add Task</button>
+      <button className="addTask">
+        <p>Add task</p>
+        <BsArrowRightCircle className="row" />
+      </button>
     </form>
   );
 };

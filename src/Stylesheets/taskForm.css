@@ -10,14 +10,35 @@
 }
 
 .Form > button{
-  
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex: 1 0 330px;
+  border-radius: 10px;
+  border-color: aqua;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
 }
+
+.row{
+  position: absolute;
+  
+  animation-duration: 2s;
+  animation-name: row;
+  animation-iteration-count: infinite;
+  transition: linear;
+}
+
 
 .inputs{
   display: flex;
   flex-direction: column;
   margin: 0 0 10px;
-  flex-grow: 1;
+  flex: 2 0 330px;
   padding: 30px;
 }
 
@@ -30,12 +51,12 @@
   margin: 0 0 10px 0;
   border-radius: 5px;
   background-color: transparent;
+  flex:auto auto auto
 }
 
 .inputs > textarea {
   border: 2px solid white;
   color: antiquewhite;
-
   height: 100px;
   padding: 10px;
   font-size: 2vh;
@@ -55,3 +76,11 @@ input:focus, textarea:focus {
   color: rgba(250, 235, 215, 0.526);
 }
 
+@keyframes row{
+0% {
+  left: 70%;
+}
+100%{
+  left: 80%;
+}
+}

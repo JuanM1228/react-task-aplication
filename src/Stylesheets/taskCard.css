@@ -1,5 +1,10 @@
 .taskCard{
-  background-color: aliceblue;
+  background-color: transparent;
+  border: solid white;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
   border-radius: 10px;
 }

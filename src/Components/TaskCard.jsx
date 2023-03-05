@@ -4,8 +4,10 @@ import { MdDelete } from "react-icons/md";
 export const TaskCard = ({ task, key }) => {
   return (
     <div className="taskCard">
-      <h1>{task.title}</h1>
-      <p>{task.description}</p>
+      <div>
+        <h1>{task.title}</h1>
+        <p>{task.description}</p>
+      </div>
       <MdDelete />
     </div>
   );

@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+.Form {
+ background-color: azure;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.inputs{
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  margin: 30px 0;
+}
+
+.inputs > input{
+  flex: 1 0  auto;
+}
+
+.inputs > textarea{
+  flex: 1 0  auto;
+}

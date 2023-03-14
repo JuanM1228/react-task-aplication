@@ -1,24 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
 .Form {
- background-color: azure;
+ background-color: #363636d2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3vh;
+  border-radius: 10px;
+}
+
+.input {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex-grow: 1;
+  height: 100%;
+  margin: 10px;}
+
+.input > input{
+  background: transparent;
+  border: solid 1px white;
+  padding: 1vh;
+  border-radius: 5px;
 }
 
-.inputs{
-  background-color: beige;
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: stretch;
-  margin: 30px 0;
+.input > textarea{
+  background: transparent;
+  border: solid 1px white;
+  padding: 1vh;
+  border-radius: 5px;
 }
 
-.inputs > input{
-  flex: 1 0  auto;
+.input > h5 {
+  color: #dadada;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 100;
+  margin: 0 0 8px 0;
 }
 
-.inputs > textarea{
-  flex: 1 0  auto;
+.addTask{
+  flex-grow: 1;
 }

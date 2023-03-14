@@ -25,20 +25,23 @@ export const TaskForm = ({ createTask }) => {
   };
   return (
     <form onSubmit={handleSubmit} className="Form">
-      <div className="inputs">
+      <div className="input">
+        <h5>Name</h5>
         <input
           placeholder="Write your task"
           onChange={handleOnChangeInput}
           value={title}
           autoFocus
         />
+      </div>
+      <div className="input">
+        <h5>Description</h5>
         <textarea
-          placeholder="Description"
+          placeholder="Write your descripion"
           onChange={handleOnChangeTextArea}
           value={description}
         ></textarea>
       </div>
-
       <button className="addTask">
         <p>Add task</p>
         <BsArrowRightCircle className="row" />

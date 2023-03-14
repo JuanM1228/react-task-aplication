@@ -17,6 +17,7 @@ export const App = () => {
 
   return (
     <div className="body">
+      <h1>My tasks</h1>
       <TaskForm createTask={createTask} />
       <TaskList tasks={tasks} />
     </div>

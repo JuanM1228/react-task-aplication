@@ -1,13 +1,13 @@
 @import "./taskCard.css";
 @import "./taskForm.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 
 :root {
-  background-color:#1c252c;
+  background-color: #252525;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +16,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  margin: 40px;
+  padding: 0 10%;
+}
 
+.body > h1 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color:aliceblue;
+  margin: 0 0 15px 0;
+  text-align: center;
 }

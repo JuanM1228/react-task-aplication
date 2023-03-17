@@ -5,10 +5,10 @@ export const TaskCard = ({ task, key }) => {
   return (
     <div className="taskCard">
       <div>
-        <h1>{task.title}</h1>
+        <h2>{task.title}</h2>
         <p>{task.description}</p>
       </div>
-      <MdDelete />
+      <MdDelete className="iconDelete" />
     </div>
   );
 };

@@ -15,19 +15,15 @@
   height: 100%;
   margin: 10px;}
 
-.input > input{
+.textInput{
   background: transparent;
   border: solid 1px white;
   padding: 1vh;
   border-radius: 5px;
+  color: white;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.input > textarea{
-  background: transparent;
-  border: solid 1px white;
-  padding: 1vh;
-  border-radius: 5px;
-}
 
 .input > textarea::placeholder{
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -56,7 +52,13 @@
 
 .addTask{
   flex-grow: 1;
-  height: 40px;
+  height: 50px;
   align-self: center;
   margin: 10px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 18px;
+  background-color: rgb(255, 140, 0);
+  border: none;
+  border-radius: 10px;
+  color: rgb(18, 18, 18);
 }

@@ -31,6 +31,7 @@ export const TaskForm = ({ createTask }) => {
           placeholder="Write your task"
           onChange={handleOnChangeInput}
           value={title}
+          className="textInput"
           autoFocus
         />
       </div>
@@ -40,6 +41,7 @@ export const TaskForm = ({ createTask }) => {
           placeholder="Write your descripion"
           onChange={handleOnChangeTextArea}
           value={description}
+          className="textInput"
         ></textarea>
       </div>
       <button className="addTask">

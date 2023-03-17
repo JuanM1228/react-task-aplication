@@ -44,7 +44,6 @@ export const TaskForm = ({ createTask }) => {
       </div>
       <button className="addTask">
         <p>Add task</p>
-        <BsArrowRightCircle className="row" />
       </button>
     </form>
   );
